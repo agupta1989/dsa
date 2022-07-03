@@ -1,0 +1,15 @@
+function sumAll(arr) {
+  var sumTotal = 0;
+  var start = arr[0];
+  var end = arr[1];
+  var larger = start > end ? start : end;
+  var smaller = start < end ? start : end;
+
+  while (smaller <= larger) {
+    sumTotal += smaller;
+    smaller++;
+  }
+  return sumTotal;
+}
+
+sumAll([1, 4]);
